@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Контакт | Машинска школа Преоце</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add('js');</script>
+<script src="js/main.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">Машинска школа</a>
+    <button class="nav-toggle" type="button" aria-label="Мени" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="site-nav">
+      <ul class="menu">
+        <li><a href="home.html">Почетна</a></li>
+        <li><a href="dokumenta.html">Документа</a></li>
+        <li><a href="kolegijum.html">Колегијум</a></li>
+        <li><a href="galerija.html">Галерија</a></li>
+        <li class="active"><a href="contacts.html">Контакт</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Машинска школа Преоце</span>
+      <h1>Контакт</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Podaci o skoli -->
+        <div class="info-card reveal">
+          <h2>Подаци о школи</h2>
+          <ul class="info-list">
+            <li>
+              <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+              <div><small>Место</small><span>Преоце</span></div>
+            </li>
+            <li>
+              <span class="ico"><svg viewBox="0 0 24 24"><path d="M3 10.5L12 3l9 7.5"/><path d="M5 9v11h14V9"/><path d="M10 20v-6h4v6"/></svg></span>
+              <div><small>Адреса</small><span>Мирољуба Танасковића - Преоце</span></div>
+            </li>
+            <li>
+              <span class="ico"><svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M9 21v-5h6v5"/></svg></span>
+              <div><small>Општина</small><span>Приштина</span></div>
+            </li>
+            <li>
+              <span class="ico"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>
+              <div><small>Телефон</small><span>+383 45/360-593</span><br><span>038/ 81 119</span></div>
+            </li>
+            <li>
+              <span class="ico"><svg viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/></svg></span>
+              <div><small>Школска управа</small><span>Косовска Митровица</span></div>
+            </li>
+            <li>
+              <span class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+              <div><small>Имејл</small><a href="mailto:masinskaskolapre@hotmail.com">masinskaskolapre@hotmail.com</a></div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Kontakt forma -->
+        <div class="card form-card reveal">
+          <h2>Контактирај нас</h2>
+          <!-- Za testiranje poruke stizu na magzamagzic@gmail.com - kasnije zameniti adresu skole -->
+          <form id="contact-form" action="https://formsubmit.co/magzamagzic@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Нова порука са сајта школе">
+            <input type="hidden" name="_template" value="table">
+            <fieldset class="form-grid">
+              <input class="field full" type="text" name="ime" placeholder="Име" aria-label="Име">
+              <input class="field" type="email" name="mejl" placeholder="Имејл" aria-label="Имејл">
+              <input class="field" type="tel" name="telefon" placeholder="Телефон" aria-label="Телефон">
+              <textarea class="field full" name="poruka" placeholder="Порука" aria-label="Порука"></textarea>
+            </fieldset>
+            <div class="form-actions">
+              <button class="btn btn-light" type="reset">Обриши</button>
+              <button class="btn" type="submit">Пошаљи<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Mapa -->
+      <div class="card map-card reveal">
+        <div class="map-head">
+          <h2>Локација школе</h2>
+        </div>
+        <iframe
+          title="Локација школе"
+          loading="lazy"
+          src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=42.59851,+21.12115&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=61.282355,146.513672&amp;ie=UTF8&amp;hq=&amp;hnear=42.59851,+21.12115&amp;ll=42.59851,21.12115&amp;spn=0.01628,0.025663&amp;z=14&amp;iwloc=A&amp;output=embed">
+        </iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="index.html" class="logo">Машинска школа</a>
+      <p>Знање, занат и технологија – од 1968. године.</p>
+    </div>
+    <div>
+      <h4>Мени</h4>
+      <ul>
+        <li><a href="home.html">Почетна</a></li>
+        <li><a href="dokumenta.html">Документа</a></li>
+        <li><a href="kolegijum.html">Колегијум</a></li>
+        <li><a href="galerija.html">Галерија</a></li>
+        <li><a href="contacts.html">Контакт</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Контакт</h4>
+      <ul>
+        <li>Мирољуба Танасковића - Преоце</li>
+        <li>+383 45/360-593</li>
+        <li><a href="mailto:masinskaskolapre@hotmail.com">masinskaskolapre@hotmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">&copy; 2025 Средња Машинска школа Преоце</div>
+  </div>
+</footer>
+</body>
+</html>
